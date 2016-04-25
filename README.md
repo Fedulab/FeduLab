@@ -1,3 +1,19 @@
+# Fedulab 
+
+* Start 
+```
+git clone -o react-starter-kit -b master --single-branch https://github.com/kriasoft/react-starter-kit.git Fedulab
+npm install & npm start
+```
+* Deploy 'build' directory to Heroku (uncomment the build in .gitignore)
+```sh
+git subtree push --prefix build heroku master
+```
+
+
+
+# React Reference
+
 ## React Starter Kit — "isomorphic" web app boilerplate
 
 > [React Starter Kit](https://www.reactstarterkit.com) is an opinionated
