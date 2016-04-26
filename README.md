@@ -1,5 +1,9 @@
 # Fedulab 
 
+
+
+Besides building the product, we also hope to experience the latest technologies. That's why we pick React-Starter-Kit, which will allow us to learn and use the popular technologies including server-side-rendering, graphql...
+
 * Start 
 ```
 git clone -o react-starter-kit -b master --single-branch https://github.com/kriasoft/react-starter-kit.git Fedulab
@@ -10,8 +14,22 @@ npm install & npm start
 git subtree push --prefix build heroku master
 ```
 
+## Ideas
+1. Use React-Bootstrap to speedup
+ 
+
+## TODO
+* MMVP
+  - Update the models, use MongoDB / mongolab for storage ?
+
+* MVP
+  - Auth 
 
 
+## Learn 
+* [Async Await](https://www.twilio.com/blog/2015/10/asyncawait-the-hero-javascript-deserved.html)
+
+* [Universal Router Slides](http://slides.com/koistya/universal-router#/)
 # React Reference
 
 ## React Starter Kit — "isomorphic" web app boilerplate

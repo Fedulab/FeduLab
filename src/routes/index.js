@@ -33,7 +33,8 @@ export default {
 
   async action({ next, render, context }) {
     const component = await next();
-    if (component === undefined) return component;
+    // [Audrey]: have to add below line for unmatched route handling
+    if (component === undefined) return undefined;
     return render(
       <App context={context}>{component}</App>
     );
