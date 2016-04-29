@@ -3,7 +3,7 @@ import Card from './../Card/Card.js';
 
 export default function CardGrid({ ideas }) {
   const ideaGrid = ideas.map((idea, i) => (
-    <Card idea={ { title: i } } key={ i } />
+    <Card idea={ idea } key={ i } />
   ));
   return (
     <div className="row">
