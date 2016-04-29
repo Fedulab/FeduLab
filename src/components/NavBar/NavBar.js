@@ -8,16 +8,16 @@ function NavBar({ user }) {
   return (
     <nav className="white">
       <div className="nav-wrapper" >
-        <a href="#" className="blue-grey-text brand-logo">FeduLab</a>
-        <ul className="right">
+        <a href="#" className="blue-grey-text text-darken-4 brand-logo">FeduLab</a>
+        <ul className="right hide-on-med-and-down">
           <li>
             <form>
               <div className="input-field">
                 <input id="search" type="search" required />
                 <label htmlFor="search">
-                  <i className="blue-grey-text material-icons">search</i>
+                  <i className="blue-grey-text text-darken-4 material-icons">search</i>
                 </label>
-                <i className="blue-grey-text material-icons">close</i>
+                <i className="material-icons">close</i>
               </div>
             </form>
           </li>
@@ -26,7 +26,7 @@ function NavBar({ user }) {
               + Create
             </a>
           </li>
-          <li className={ cx(s.padRight, s.bgDarkenText) }>
+          <li className={ cx(s.padRight, 'text-darken-4', 'blue-grey-text') }>
             Browse
           </li>
           <li className={ s.padRight }>

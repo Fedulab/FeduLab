@@ -6,12 +6,14 @@ import s from './Card.scss';
 function Card({ idea }) {
   return (
     <div className={ cx('col', 's12', 'm4', 'l3', s.noPadding) } >
-      <div className="card" >
+      <div className="card hoverable" >
         <div className="card-image">
-          <img src="https://placehold.it/400x350" alt="Idea" />
-          <span className="card-title">Idea Title: { idea.title }
-            <br />
-            <span className={ cx('white-text', s.smallText, s.bottomLeft) } >idea description</span>
+          <img src={ idea.image } alt="Idea" />
+          <span className="card-title">
+            { idea.title }
+            <span className={ cx('white-text', s.smallText, s.bottomLeft) } >
+            { idea.description }
+            </span>
           </span>
         </div>
       </div>
