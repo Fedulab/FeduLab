@@ -1,10 +1,8 @@
-# Fedulab 
-
-
+# Fedulab
 
 Besides building the product, we also hope to experience the latest technologies. That's why we pick React-Starter-Kit, which will allow us to learn and use the popular technologies including server-side-rendering, graphql...
 
-* Start 
+* Start
 ```
 git clone -o react-starter-kit -b master --single-branch https://github.com/kriasoft/react-starter-kit.git Fedulab
 npm install & npm start
@@ -12,21 +10,22 @@ npm install & npm start
 * Deploy 'build' directory to Heroku (uncomment the build in .gitignore)
 ```sh
 git subtree push --prefix build heroku master
+git push heroku `git subtree split --prefix build  develop`:master --force  #force push the develop build to heroku master
 ```
-
+Note: for convenince, we push the build directory to remote.
 ## Ideas
 1. Use React-Bootstrap to speedup
- 
+
 
 ## TODO
 * MMVP
   - Update the models, use MongoDB / mongolab for storage ?
 
 * MVP
-  - Auth 
+  - Auth
 
 
-## Learn 
+## Learn
 * [Async Await](https://www.twilio.com/blog/2015/10/asyncawait-the-hero-javascript-deserved.html)
 
 * [Universal Router Slides](http://slides.com/koistya/universal-router#/)
